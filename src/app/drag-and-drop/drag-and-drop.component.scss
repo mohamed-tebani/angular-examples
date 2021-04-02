@@ -1,0 +1,30 @@
+.drag-and-drop-container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.drag-and-drop-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.drag-and-drop-item {
+  flex: 1 1 100%;
+  max-width: 30%;
+  height: 500px;
+  overflow: auto;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.drag-and-drop-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 100px;
+  margin: 0 20px;
+}

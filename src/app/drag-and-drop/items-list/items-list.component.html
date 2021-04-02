@@ -1,0 +1,7 @@
+<h1 class="items-title">{{ title }}</h1>
+<div *ngFor="let item of items" cdkDrag>
+  <app-item-list [description]="item"></app-item-list>
+</div>
+<div *ngIf="items.length === 0">
+  Clean
+</div>

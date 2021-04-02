@@ -1,0 +1,17 @@
+<div class="drag-and-drop-container">
+  <div class="drag-and-drop-list" cdkDropListGroup>
+    <div class="drag-and-drop-item">
+      <app-items-list [items]="todo" title="To do" cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListData]="todo"></app-items-list>
+    </div>
+    <div class="drag-and-drop-item">
+      <app-items-list [items]="progress" title="In progress" cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListData]="progress"></app-items-list>
+    </div>
+    <div class="drag-and-drop-item">
+      <app-items-list [items]="done" title="Done" cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListData]="done"></app-items-list>
+    </div>
+  </div>
+  <div class="drag-and-drop-footer">
+    <button mat-flat-button color="warn" class="btn">Reset</button>
+    <button mat-flat-button color="primary" class="btn">Save</button>
+  </div>
+</div>

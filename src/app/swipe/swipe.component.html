@@ -1,0 +1,32 @@
+<div class="parent-container">
+
+  <div class="first-div-container">
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+    <div>CONTENT STATIC</div>
+  </div>
+
+  <div class="second-div-container" #divSwipper (panup)="onPanUp($event, divSwipper)"
+    (pandown)="onPanDown($event, divSwipper)" (panend)="onPanEnd($event, divSwipper)"
+    [ngClass]="fullHeight ? 'h-100' : 'h-50'">
+
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+    <div>CONTENT SWIPE</div>
+
+  </div>
+</div>
